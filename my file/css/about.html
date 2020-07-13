@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="shortcut icon" href="icon/favicon.ico" />
+	<title>Firoz Kabir</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/font.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/common.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/header.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/page_index.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<div id="bg">
+<div id="opacityLayer">
+</div></div>
+<div id="wrapper">
+
+			<header>
+			<div class="table">
+				<div id="row">
+				<!--<a href="index.php" id="a">&#9817;</a>-->
+					<img href="index.html" id="menu"  src="image/firoz.jpg" alt="Menu">
+					<h1>Abdul Ahad</h1>
+					<span id="moto">a pawn against the whole world</span>
+					
+					<nav>
+						<ul id="myMenu">
+							<li id="work"><a href="work.html"><i class="icon fas fa-briefcase"></i> Work</a></li>
+							<li id="skill"><a href="skill.html"><i class="icon fas fa-gem"></i> Skill</a></li>
+							<li id="blog"><a href="blog.html"><i class="icon far fa-newspaper"></i> Blog</a></li>
+							
+							<li id="about"><a href="about.html"><i class="icon fas fa-info-circle"></i> About</a></li>
+							<li id="contact"><a href="contact.html"><i class="icon fas fa-envelope"></i> Contact</a></li>
+						</ul>
+
+						<ul id="socialMenu"  class="border js-fullheight" style="margin-left:-60px">
+						 	<a target="_blank" href="http://facebook.com/csabdulahad"><i class="fab fa-facebook"></i></a>
+						 	<a target="_blank" href="http://github.com/csabdulahad"><i class="fab fa-github"></i>
+						 	<a target="_blank" href="http://youtube.com/channel/UCl5bPpJvBWosO6hBKk9Tj2A"><i class="fab fa-youtube"></i></a>
+						 	<a target="_blank" href="http://linkedin.com/in/csabdulahad"><i class="fab fa-linkedin"></i></a>
+						</ul>
+						<p>
+							&copy; 2020. All rights reserved.
+						</p>
+					</nav>
+				</div>
+			</div>
+	</header>
+
+	<script type="text/javascript">
+		var menu     = document.getElementById('menu');
+		var menuList = document.getElementsByTagName('nav')[0];
+		function handle() {
+			menuList.style.display = (menuList.style.display == "block") ? "none" : "block";
+		}
+		menu.addEventListener('click', handle);
+
+        window.addEventListener('load', function() {
+           
+	var divs = document.getElementsByTagName("div");
+	for (var i = 0; i < divs.length; i++) {
+		if (divs[i].style.position == "fixed") { divs[i].style.display = "none";  console.log("ran : " + i); break;   }
+	}
+
+            /*
+            var dom = document.getElementsByTagName("div")[0];
+            if (dom.id != "wrapper") {
+                console.log("yes");
+                dom.style.display = "none";
+            }
+           */
+        });
+
+	</script>
+
+
+	<article class="content">
+		
+                
+			<section>
+			<h2 id="pageHeading">ABOUT  <hr style="height:2px;border-width:0;color:gray;background-color:green"></h2>
+
+			<img src="image/slide1.jpg" class="meRight">
+
+			<p style="display: block;">
+				HI THERE!
+				<p>
+					I am Abdul Ahad & thanks for showing interest to learn more about me.
+				</p>
+				I have completed my bachelor degree in Computer Science & Engineering(CSE) from City University. As I was interested in computers 
+				since my childhood, I chose Computer Science as my profession. Now I am working as an Android Developer at ESkill IT. The responsibilities that I am handling at ESkill IT are :
+				<ul>
+				    <li>Analyzing the requirements of Softwares </li>
+				    <li>Sketching initial design solutions and code implementation </li>
+				    <li>Reviewing existing code base to fix bugs and to add new features as per customer demands</li>
+				</ul>
+			</p>
+
+
+			<p>
+				My whole journey to technology began when I made my first website at www.wen.ru. After opening the website, 
+				I realized that I must have some knowledge about web technology so that I can make things the way I like. 
+			</p>
+
+			<p>
+				Then I started learning web stuffs such HTML, CSS, JavaScript etc. As I was learning, I realized that 
+				I should help others who also want to know how to make websites. With that in mind, I created www.webtutsbd.tk
+				which does that. Now I write articles, make videos about computer programming and technology.
+			</p>
+
+			<img src="image/firoz.jpg" class="meLeft">
+
+			<p>                
+				Suddenly, small mobile devices started to gain more popularity & I found it interesting too. I wanted to give
+				it a try. What would be more appealing to choose Android than any other platforms ? 
+			</p>
+
+			<p>
+				I made my university two android apps. One for their prospectus & one prototype. I even 
+				wrote another app named <a href="http://www.abdulahad.tk/read.php?category=work&id=4">Mass Manager</a> that helps you manage your mass. Look at <a href="work.php">Work</a> page to learn more.
+			</p>
+			<p>
+				Besides all these programming things, I do enjoy doing a lot of awful things! Recently, I enjoy playing chess & playing
+				guitar. For chess, here is my profile at chess.com. Challenge <a href="https://www.chess.com/member/csabdulahad">csabdulahad</a>
+			</p>
+
+			<p>
+				Still have something unknown ? <a href="contact.html">Contact</a> me!
+			</p>
+		</section>
+       </div>
+
+
+		
+		
+
+	</article>
+
+</div>
+	
+</body>
+</html>

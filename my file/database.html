@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="shortcut icon" href="icon/favicon.ico" />
+	<title>Firoz Kabir</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/font.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/common.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/header.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/page_index.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+	
+	<script type="text/javascript">
+
+		function get(id) {
+			return document.getElementById(id);
+		}
+
+		function Share(){
+
+			this.centerX = 0;
+			this.centerY = 0;
+
+		    this.show = function(){
+
+	        	var pageOverloay = get('pageOverlay');
+	        	var dialogbox = get('dialogbox');
+
+	        	pageOverloay.style.display = "block";
+	        	dialogbox.style.display = "block";
+
+
+		        var winW = window.innerWidth;
+		        var winH = window.innerHeight;
+
+		        this.centerX = (winW * 0.5);
+		        this.centerY = (winH * 0.5);
+
+		        dialogbox.style.left = this.centerX  - (dialogbox.offsetWidth  * 0.5)  +"px" ;
+		        dialogbox.style.top  = this.centerY  - (dialogbox.offsetHeight * 0.5) + "px";
+		    };
+
+			this.close = function(){
+				get('pageOverlay').style.display = "none";
+				get('dialogbox').style.display = "none";
+			};
+
+			this.share = function (network) {
+				var url;
+				switch (network) {
+					case 'f':
+						url = "https://www.facebook.com/sharer.php?u=http%3A%2F%2Fabdulahad.net%2Fread.php%3Fcategory%3Dblog%26id%3D6";
+					break;
+					case 'g':
+						url = "https://plus.google.com/share?url=http%3A%2F%2Fabdulahad.net%2Fread.php%3Fcategory%3Dblog%26id%3D6";
+					break;
+					case 't':
+						url = "https://twitter.com/share?url=http%3A%2F%2Fabdulahad.net%2Fread.php%3Fcategory%3Dblog%26id%3D6";
+					break;
+					default:
+						url = "https://www.linkedin.com/cws/share?url=http%3A%2F%2Fabdulahad.net%2Fread.php%3Fcategory%3Dblog%26id%3D6";
+					break;
+
+				}
+				window.open(url, 'sharer', 'toolbar=0, status=0, width=626, height=456, top=' + (this.centerY - (456 * 0.4)) + ', left=' + (this.centerX - (626 * 0.5)) );
+				this.close();
+			};
+
+		}
+		var Share = new Share();
+	</script>
+	</header>
+
+	<script type="text/javascript">
+		var menu     = document.getElementById('menu');
+		var menuList = document.getElementsByTagName('nav')[0];
+		function handle() {
+			menuList.style.display = (menuList.style.display == "block") ? "none" : "block";
+		}
+		menu.addEventListener('click', handle);
+
+        window.addEventListener('load', function() {
+           
+	var divs = document.getElementsByTagName("div");
+	for (var i = 0; i < divs.length; i++) {
+		if (divs[i].style.position == "fixed") { divs[i].style.display = "none";  console.log("ran : " + i); break;   }
+	}
+
+            /*
+            var dom = document.getElementsByTagName("div")[0];
+            if (dom.id != "wrapper") {
+                console.log("yes");
+                dom.style.display = "none";
+            }
+           */
+        });
+
+	</script>
+	
+</head>
+
+
+
+
+<body>
+<div id="bg">
+<div id="opacityLayer">
+</div></div>
+<div id="wrapper">
+
+			<header>
+			<div class="table">
+				<div id="row">
+				<!--<a href="index.php" id="a">&#9817;</a>-->
+					<img href="index.html" id="menu"  src="image/firoz.jpg" alt="Menu">
+					<h1>Abdul Ahad</h1>
+					<span id="moto">a pawn against the whole world</span>
+					
+					<nav>
+						<ul id="myMenu">
+							<li id="work"><a href="work.html"><i class="icon fas fa-briefcase"></i> Work</a></li>
+							<li id="skill"><a href="skill.html"><i class="icon fas fa-gem"></i> Skill</a></li>
+							<li id="blog"><a href="blog.html"><i class="icon far fa-newspaper"></i> Blog</a></li>
+							
+							<li id="about"><a href="about.html"><i class="icon fas fa-info-circle"></i> About</a></li>
+							<li id="contact"><a href="contact.html"><i class="icon fas fa-envelope"></i> Contact</a></li>
+						</ul>
+
+						<ul id="socialMenu"  class="border js-fullheight" style="margin-left:-60px">
+						 	<a target="_blank" href="http://facebook.com/csabdulahad"><i class="fab fa-facebook"></i></a>
+						 	<a target="_blank" href="http://github.com/csabdulahad"><i class="fab fa-github"></i>
+						 	<a target="_blank" href="http://youtube.com/channel/UCl5bPpJvBWosO6hBKk9Tj2A"><i class="fab fa-youtube"></i></a>
+						 	<a target="_blank" href="http://linkedin.com/in/csabdulahad"><i class="fab fa-linkedin"></i></a>
+						</ul>
+						<p>
+							&copy; 2020. All rights reserved.
+						</p>
+					</nav>
+				</div>
+			</div>
+			
+			
+			
+			
+			<style type="text/css">
+
+	    code td {
+            padding: 0;
+            padding-right: 24px;
+        }
+		</style>
+		
+		
+		
+		<script type="text/javascript">
+		var menu     = document.getElementById('menu');
+		var menuList = document.getElementsByTagName('nav')[0];
+		function handle() {
+			menuList.style.display = (menuList.style.display == "block") ? "none" : "block";
+		}
+		menu.addEventListener('click', handle);
+
+        window.addEventListener('load', function() {
+           
+	var divs = document.getElementsByTagName("div");
+	for (var i = 0; i < divs.length; i++) {
+		if (divs[i].style.position == "fixed") { divs[i].style.display = "none";  console.log("ran : " + i); break;   }
+	}
+
+            /*
+            var dom = document.getElementsByTagName("div")[0];
+            if (dom.id != "wrapper") {
+                console.log("yes");
+                dom.style.display = "none";
+            }
+           */
+        });
+
+	</script>
+		
+		
+	
+
+	<article class="content">
+		
+           <section>
+				
+							<div id='meta'>
+								<span id="date">Tue, 30 June 2015</span>
+								<h2 id="postHeading">Why Database</h2>
+								<i onclick='Share.show()' title='Share' id='share' class='fas fa-share-alt'></i>
+							</div>
+						<p>আপনি যদি কিছুক্ষন বা কিছুদিন কম্পিউটার ব্যবহার করে থাকেন, তবে নিশ্চয়ই <a href="http://en.wikipedia.org/wiki/Database" target="_blank" >&ldquo;Database&rdquo;</a> শব্দটি শুনে থাকবেন। আর যারা প্রোগ্রামিং এর সাথে যুক্ত তারা অবশ্যই জানেন ডাটাবেজ কি। এটা কোন বিষয় না, আপনি কোন প্রোগ্রামিং ল্যাঙ্গুয়েজ ব্যবহার করেন, কি ধরনের অ্যাপ্লিকেশন তৈরি করেন, &ldquo;Database&rdquo; আপনার লাগবেই।</p>
+
+ 
+
+<p>ডাটাবেজ বুঝতে হলে আগে আমাদের বুঝতে হবে ডাটা জিনিষটা মূলত কি। কম্পিউটারে ডাটা বলতে কিছু তথ্যকে বুঝায়। যা আমরা কম্পিউটারে রাখতে পারি, কম্পিউটার দিয়ে তা বিশ্লেষন করতে পারি, ব্যবহার করতে পারি ইত্যাদি। ঠিক আছে আমার কিছু টেক্সট ডকুমেন্ট আছে, তাহলে আমি কম্পিউটারে তা কিভাবে জমা রাখতে পারি? উত্তরটা খুবই সহজ। যেকোন একটা টেক্সট এডিটর সফটওয়্যার ওপেন করে, তাতে লিখে একটা ফাইল বানিয়ে ষ্টোর করে রাখতে পারেন। অথবা Microsoft Excel ব্যবহার করে জমা রাখতে পারেন। কিন্তু ডাটার সাইজ যখন আস্তে আস্তে বড় হতে থাকবে তখন কি করবেন? এটারও একটা সহজ সমাধান আছে। সেটা হল ডাটাগুলোকে অল্প অল্প করে বিভিন্ন ফাইলে রাখবেন এবং তাদেরকে কাজের সুবিধা অনুসারে বিভিন্ন ফোল্ডারে সাজিয়ে রাখবেন।</p>
+
+<p>বিঃদ্রঃ এইখানে ডাটা বলতে শুধু টেক্সট টাইপের ডকুমেন্টকে বুঝানো হচ্ছে না। ছবি, ভিডিও, MP3 ইত্যাদি ধরনের ডাটাও বুঝানো হচ্ছে।</p>
+
+ 
+
+<p>কিন্তু যখন আপনার ফাইল অথবা ফোল্ডার এর সংখ্যা ২০০ বা ১০০০ বা তার বেশি হয়ে যাবে তখনই সমস্যার কেবল শুরু। কোন একটা তথ্য খুজে বের করা, তা আপডেট করা, একই সময়ে একই ফাইলে অনেক জনের কাজ করা ইত্যাদি তখন অনেক বড় বাধা হয়ে দাড়ায়। কত দ্রুত তথ্য বের করতে পারেন, ডাটাগুলোর কি সত্যতা ঠিক আছে কিনা ইত্যাদি আরো অনেক সমস্যার তখন উদ্ভব হয়। আরো অনেক ধরনের সমস্যা হয়, যা এই পোষ্টে বলা সম্বব না। এতক্ষণ আমারা আলোচনা করলাম ডাটাবেজ না থাকলে ভবিষ্যতে আমাদের কি কি সমস্যা হতে পারে। এখন আমরা জানবো ডাটাবেজের সংজ্ঞা কি।</p>
+
+<blockquote><p>&ldquo;A database is a collection of information that is organized so that it can easily be accessed, managed, and updated.&rdquo;</p></blockquote>
+
+<p>আপনি কখনই ডাটাবেজ দেখতে পারবেন না। কারণ এটা কম্পিউটারের ইন্টারনাল ব্যাপার। কিন্তু কিভাবে আপনি নিশ্চিত হবেন যে আপনার ডাটাবেজে থাকা তথ্যাদি সঠিক, সঠিক নিয়ম অনুসারে আছে। অথবা আপনি কিভাবে আপনার ডাটাগুলো ব্যবহার করতে পারবেন? কিভাবে আপনার ডাটাগুলোকে আপডেট করবেন, ম্যানেজ করবেন, কিভাবে দ্রুত খুজে বের করবেন? ইত্যাদি।</p>
+
+ 
+
+<p>এই সমস্যা সমধান করতে Database Management Systems (DBMS) নামে এক ধরনের সফটওয়্যার এর উদ্ভব হয়। যেমনঃ MySQL, SQL, Oracle ইত্যাদি।</p>
+
+<blockquote><p>&ldquo;Database management systems (DBMS) are computer software applications that interact with the user, other applications, and the database itself to capture and analyze data.&rdquo;</p></blockquote>
+
+<p>এই অ্যাপ্লিকেশনগুলো আপনার ডাটাগুলোকে খুব সুন্দর করে সংরক্ষন করে। আপনার ডাটার উপর আপনার তৈরি করা নিয়ম অনুসারে তা দেখাশুনা করে থাকে, যাতে করে আপনার ডাটাগুলো Consistent থাকে, ডাটাগুলো সহজে আপডেট করা যায় এবং আপনার ডাটাগুলো একটা নিয়ম মেনে বেড়ে উঠতে পারে যাতে করে তথ্যগুলো সঠিক বা সত্য থাকে। শুধু তাই নয়। এটা আরো অনেক কিছু করে থাকে। যেমন আপনার ডাটা সুরক্ষিত রাখে, এমনকি যদিও সিস্টেম ফেইল হয়। আরো অনেক কিছু করা যায় এই সফটওয়্যার দিয়ে।</p>
+
+ 
+
+<p>আশা করি আপনাদের বুঝতে কোথাও সমস্যা হয়নি। যদি কোথাও সমস্যা হয় কমেন্ট করে আমাকে জানাতে পারেন এবং পারলে এই পোষ্টি শেয়ার করুন।</p>
+
+<p>সবাইকে ধন্যবাদ। ভালো থাকুন।</p>			</section>
+
+
+
+       </div>
+
+
+		
+		
+
+	</article>
+
+</div>
+	
+	
+	
+	
+	<div id="disqus_thread">
+<script>
+
+var disqus_config = function () {
+this.page.url = "http://abdulahad.tk/read.php?id=6&category=blog";
+this.page.identifier = "6&";
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://xfighter.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>		
+
+</article>
+
+</div>
+
+	<div id="dialogbox">
+		<h4>Share</h4>
+		<ul>
+		 	<li onclick="Share.share('f')"><i class="fab fa-facebook"></i></li>
+		 	<li onclick="Share.share('t')"><i class="fab fa-twitter-square"></i></li>
+		 	<li onclick="Share.share('g')"><i class="fab fa-google-plus-square"></i></li>
+		 	<li onclick="Share.share('l')"><i class="fab fa-linkedin"></i></li>
+		</ul>
+		<i id="close" onclick="Share.close()" class="fas fa-times"></i>
+	</div>
+
+	<script src="lib/highlight/highlight.pack.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.6.0/highlightjs-line-numbers.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+        hljs.initLineNumbersOnLoad();
+    </script>
+	
+	
+	</div>
+</body>
+</html>
